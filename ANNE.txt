@@ -1,0 +1,10 @@
+# À la base du projet
+
+mkdir db
+mongod --dbpath="db"
+mongoimport --db "KSData" -c "KickStarter" --type csv --file "ks-projects-201801.csv" --headerline
+
+# Change de terminal mais toujours dnas le même dir
+
+npm init -y
+npm run watch

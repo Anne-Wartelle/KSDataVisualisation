@@ -1,0 +1,35 @@
+{
+  "name": "ksdatavisualisation",
+  "version": "1.0.0",
+  "description": "Project to visualize KickStarter data",
+  "main": "routes/index.js",
+  "scripts": {
+    "watch": "nodemon ./start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anne-Wartelle/KSDataVisualisation.git"
+  },
+  "author": "Anne Wartelle & Jerôme Legriffon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anne-Wartelle/KSDataVisualisation/issues"
+  },
+  "homepage": "https://github.com/Anne-Wartelle/KSDataVisualisation#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jquery": "^3.4.1",
+    "mongodb": "^3.5.5",
+    "popper": "^1.0.1",
+    "pug": "^2.0.4",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "keywords": []
+}
