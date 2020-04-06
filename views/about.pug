@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title= `${title}`
+        link(rel="stylesheet", href="/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/css/about.css")
+        meta(name="theme", content="#563d7c")
+
+body.text-center
+    div.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
+
+        header.masthead.mb-auto
+            div.inner
+            h3.masthead-brand="À propos"
+            nav.nav.nav-masthead.justify-content-center
+                a(href="/").nav-link="Accueil"
+
+        main(role="main").inner.cover
+            h1.cover-heading="Ceci est un projet fait par des étudiants de première année de master informatique"
+            p.lead="Dans le but de travailler sur le cours Base de données non traditionnelle, nous avons dû travailler sur la visualisation de données."
+            p.lead
+                a(href="http://www.unicaen.fr/").btn.btn-lg.btn-secondary="Unicaen"
+
+        footer.mastfoot.mt-auto

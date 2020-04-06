@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+    div.container
+        if KickStarters.length
+            ul.list-group
+                each kickstarter in KickStarters
+                    a(href=kickstarter).list-group-item.list-group-item-dark=kickstarter
+               
+        else
+            p Aucune catégorie trouvée.

@@ -1,0 +1,27 @@
+extends layout 
+
+block content
+
+    div.position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-light
+        div.col-md-5.p-lg-5.mx-auto.my-5
+            h1.display-4.font-weight-normal="Bienvenue"
+            p.lead.font-weight-normal="Ce site recense des données de KickStarter jusqu'en 2018."
+        div.product-device.shadow-sm.d-none.d-md-block
+        div.product-device.product-device-2.shadow-sm.d-none.d-md-block
+
+    div.d-md-flex.flex-md-equal.w-100.my-md-3.pl-md-3
+        div.bg-dark.mr-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.text-white.overflow-hidden
+            div.my-3.py-3
+                h2.display-5="Stockage des données en MongoDB"
+                p.lead="En cliquant sur le bouton ci-dessous, vous pouvez voir un exemple (les 500 premières données) de comment sont représentées les données dans un tableau."
+                a(href="/example").btn.btn-outline-secondary="Voir les 500 premiers"
+            div.bg-light.shadow-sm.mx-auto(style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;")
+                h2.display-6.text-secondary.pt-5="Made with Bootstrap"
+                a(href="https://getbootstrap.com/").btn.btn-outline-secondary.mt-3="Bootstrap"
+        div.bg-light.mr-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden
+            div.my-3.p-3
+                h2.display-5="Données basées sur Kaggle"
+                a(href="https://www.kaggle.com/").btn.btn-outline-secondary.mt-3="Kaggle"
+            p.lead
+                a(href="https://www.kickstarter.com/")="Kickstarter"
+            div.bg-light.shadow-sm.mx-auto(style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;")

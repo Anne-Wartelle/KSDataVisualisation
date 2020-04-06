@@ -1,4 +1,40 @@
 extends layout
 
 block content
-    p Premier élément de la collection inexistant.
+
+    if KickStarters.length
+        table.listing-table.table-dark.table-striped
+            tr
+                th Name
+                th Category
+                th Main category
+                th Currency
+                th Deadline
+                th Goal
+                th Launched
+                th Pledged
+                th State
+                th Backers
+                th Country
+                th USD pledged
+                th USD pledged real
+                th USD goal real
+
+            each kickstarter in KickStarters
+                tr
+                    td= kickstarter.name
+                    td= kickstarter.category
+                    td= kickstarter.main_category
+                    td= kickstarter.currency
+                    td= kickstarter.deadline
+                    td= kickstarter.goal
+                    td= kickstarter.launched
+                    td= kickstarter.pledged
+                    td= kickstarter.state
+                    td= kickstarter.backers
+                    td= kickstarter.country
+                    td= kickstarter.usd_pledged
+                    td= kickstarter.usd_pledged_real
+                    td= kickstarter.usd_goal_real
+    else
+        p Aucun élément trouvé.

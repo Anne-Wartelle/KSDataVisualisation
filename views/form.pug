@@ -3,11 +3,11 @@ extends layout
 block content
     -data = data || {}
     if errors
-        ul
+        ul.my-errors
             for error in errors
                 li= error.msg
-    form(action="." method="POST")
-        label(for="category") Category:
+    form(action="." method="POST" class="form-registration")
+        label(for="ID") ID: 
         select(
             type="text"
             id="category"
@@ -18,7 +18,9 @@ block content
             option(value="5") Cat1
             option(value="6") Cat2
             option(value="7") etc.
-            //- each category in categories
-            //-     option(value=category) category
 
-        input(type="submit" value="Submit")
+        input(
+            type="submit"
+            value="Submit"
+            class="btn btn-lg btn-primary btn-block"
+        )

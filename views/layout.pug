@@ -1,10 +1,18 @@
 doctype html
 html
-  head
-    title= `${title}`
-    link(rel="stylesheet", href="/css/bootstrap.min.css")
+    head
+        title= `${title}`
+        link(rel="stylesheet", href="/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/css/style.css")
+        meta(name="theme", content="#563d7c")
 
-  body
+    body
+        nav.site-header.sticky-top.py-1
+            div.container.d-flex.flex-column.flex-md-row.justify-content-between
+                a(href='/').py-2.d-none.d-md-inline-block="Accueil"
+                a(href='/categories').py-2.d-none.d-md-inline-block="Catégories"
+                a(href='/about').py-2.d-none.d-md-inline-block="À propos"
+
     div.container.listing-reg
         h1 Visualisation de données de KickStarter (2018)
 
